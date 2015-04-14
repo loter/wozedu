@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+ErrorDocument 404 /index.php?mod=404
+RewriteRule user/(.*) /index.php?mod=user&action=$1 [L,QSA]
